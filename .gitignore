@@ -8,3 +8,5 @@ parser.lib
 
 # Test files (keep test.ahk2 for grammar testing)
 # Uncomment to exclude: test.ahk2
+grammars/
+screen.png
