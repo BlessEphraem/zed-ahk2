@@ -8,4 +8,4 @@ repository = "https://github.com/BlessEphraem/zed-ahk2"
 
 [grammars.ahk2]
 repository = "file:///Z:/Codes/Plugins/Zed/ahk2"
-rev = "b22535a4049daad7f0e6af2079e501f720064b2d"
+rev = "87d346354f1f34987b9d3f475ca65b6f4188cadc"
