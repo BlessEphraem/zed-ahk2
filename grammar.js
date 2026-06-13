@@ -122,8 +122,8 @@ module.exports = grammar({
 
     hotkey_trigger: $ => token(prec(3, seq(
       optional(/[#!^+<>*~$]+/),
-      /[A-Za-z][A-Za-z0-9_]*/,
-      optional(seq(/\s+&\s+/, optional(/[#!^+<>*~$]+/), /[A-Za-z][A-Za-z0-9_]*/)),
+      /[^\s:;]+/,
+      optional(seq(/\s+&\s+/, optional(/[#!^+<>*~$]+/), /[^\s:;]+/)),
       optional(/\s+[Uu][Pp]/),
       '::',
     ))),

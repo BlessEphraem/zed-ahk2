@@ -227,7 +227,7 @@
             },
             {
               "type": "PATTERN",
-              "value": "[A-Za-z][A-Za-z0-9_]*"
+              "value": "[^\\s:;]+"
             },
             {
               "type": "CHOICE",
@@ -253,7 +253,7 @@
                     },
                     {
                       "type": "PATTERN",
-                      "value": "[A-Za-z][A-Za-z0-9_]*"
+                      "value": "[^\\s:;]+"
                     }
                   ]
                 },
