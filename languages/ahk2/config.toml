@@ -1,0 +1,18 @@
+name = "AHK2"
+grammar = "ahk2"
+path_suffixes = ["ahk", "ah2", "ahk2"]
+line_comments = ["; "]
+block_comment = ["/*", "*/"]
+auto_indent_using_last_non_empty_line = true
+
+brackets = [
+    { start = "(", end = ")", close = true, newline = false },
+    { start = "[", end = "]", close = true, newline = false },
+    { start = "{", end = "}", close = true, newline = true },
+    { start = "\"", end = "\"", close = true, newline = false, not_in = ["string", "comment"] },
+]
+
+increase_indent_pattern = "\\{\\s*$"
+decrease_indent_pattern = "^\\s*\\}"
+
+first_line_pattern = "^#Requires\\s+AutoHotkey\\s+2"

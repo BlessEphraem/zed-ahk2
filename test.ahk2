@@ -1,0 +1,117 @@
+#Requires AutoHotkey 2.0
+#SingleInstance Force
+#Include lib\utils.ahk
+
+; Hotkeys from the screenshot
+#up::{
+    CMD("komorebic move up")
+    GUI_Debug.ReturnDebug A_ThisHotkey, "Komorebic() => 'Move Window UP'", true
+}
+
+#down::{
+    CMD("komorebic move down")
+    GUI_Debug.ReturnDebug A_ThisHotkey, "Komorebic() => 'Move Window DOWN'", true
+}
+
+#left::{
+    CMD("komorebic move left")
+    GUI_Debug.ReturnDebug A_ThisHotkey, "Komorebic() => 'Move Window LEFT'", true
+}
+
+#right::{
+    CMD("komorebic move right")
+    GUI_Debug.ReturnDebug A_ThisHotkey, "Komorebic() => 'Move Window RIGHT'", true
+}
+
+; Hotstring
+::btw::By the way
+
+; Variables and assignment
+myVar := 42
+myStr := "Hello, World!"
+myHex := 0xFF
+myFloat := 3.14
+
+; Boolean
+isActive := true
+isEmpty := false
+
+; Built-in variable
+currentHotkey := A_ThisHotkey
+scriptDir := A_ScriptDir
+
+; Function definition
+MyFunction(param1, param2 := "default") {
+    local result := param1 . " " . param2
+    return result
+}
+
+; Arrow function
+Add := (a, b) => a + b
+
+; Class definition
+class MyClass extends BaseClass {
+    static count := 0
+
+    __New(name) {
+        this.name := name
+        MyClass.count += 1
+    }
+
+    GetName() {
+        return this.name
+    }
+
+    static GetCount() {
+        return MyClass.count
+    }
+}
+
+; Control flow
+if (myVar > 10) {
+    MsgBox("Greater than 10")
+} else {
+    MsgBox("Not greater")
+}
+
+while myVar > 0 {
+    myVar -= 1
+}
+
+loop 5 {
+    if (A_Index == 3)
+        break
+}
+
+for key, value in myObj {
+    OutputDebug(key . " = " . value)
+}
+
+switch myVar {
+    case 1:
+        MsgBox("One")
+    case 2, 3:
+        MsgBox("Two or Three")
+    default:
+        MsgBox("Other")
+}
+
+try {
+    result := Dangerous()
+} catch Error as e {
+    MsgBox("Error: " . e.Message)
+} finally {
+    Cleanup()
+}
+
+; Object and array literals
+myObj := {name: "Alice", age: 30}
+myArr := [1, 2, 3, "four"]
+
+; Nested calls and member access
+result := MyClass.GetCount()
+obj := new MyClass("Test")
+
+; Percent expression (legacy)
+varName := "myVar"
+value := %varName%

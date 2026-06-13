@@ -1,0 +1,11 @@
+id = "ahk2"
+name = "AHK2"
+version = "0.0.1"
+schema_version = 1
+authors = ["BlessEphraem <ephraem.contact@gmail.com>"]
+description = "AutoHotkey v2 syntax highlighting for Zed"
+repository = "https://github.com/BlessEphraem/zed-ahk2"
+
+[grammars.ahk2]
+repository = "file:///Z:/Codes/Plugins/Zed/ahk2"
+rev = "cd450f260bbb2cf06cc24d4905aada3fa3d8e2b3"

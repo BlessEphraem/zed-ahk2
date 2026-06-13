@@ -1,0 +1,43 @@
+{
+  "name": "tree-sitter-ahk2",
+  "version": "0.1.0",
+  "description": "AutoHotkey v2 grammar for tree-sitter",
+  "keywords": [
+    "parser",
+    "tree-sitter",
+    "autohotkey",
+    "ahk2"
+  ],
+  "license": "MIT",
+  "main": "bindings/node",
+  "types": "bindings/node",
+  "files": [
+    "grammar.js",
+    "binding.gyp",
+    "prebuilds/**",
+    "bindings/node/*",
+    "queries/*",
+    "src/**",
+    "*.wasm"
+  ],
+  "dependencies": {
+    "node-addon-api": "^7.1.0",
+    "node-gyp-build": "^4.8.1"
+  },
+  "peerDependencies": {
+    "tree-sitter": "^0.21.0"
+  },
+  "peerDependenciesMeta": {
+    "tree-sitter": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.24.7"
+  },
+  "scripts": {
+    "generate": "tree-sitter generate",
+    "build": "node-gyp-build",
+    "test": "tree-sitter test"
+  }
+}

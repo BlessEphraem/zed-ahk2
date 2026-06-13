@@ -1,0 +1,10 @@
+node_modules/
+
+# Build artifacts from tree-sitter generate (Windows)
+parser.obj
+parser.exp
+parser.lib
+*.wasm
+
+# Test files (keep test.ahk2 for grammar testing)
+# Uncomment to exclude: test.ahk2

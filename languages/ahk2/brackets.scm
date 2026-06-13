@@ -1,0 +1,10 @@
+; Bracket pairs for tree-sitter-based matching
+(parameter_list        "(" @open ")" @close)
+(argument_list         "(" @open ")" @close)
+(parenthesized_expression "(" @open ")" @close)
+(array_literal         "[" @open "]" @close)
+(subscript_expression  "[" @open "]" @close)
+(block                 "{" @open "}" @close)
+(class_body            "{" @open "}" @close)
+(object_literal        "{" @open "}" @close)
+(switch_statement      "{" @open "}" @close)
