@@ -1,5 +1,5 @@
 id = "ahk2"
-name = "AHK2"
+name = "AutoHotkey 2.0"
 version = "0.0.1"
 schema_version = 1
 authors = ["BlessEphraem <ephraem.contact@gmail.com>"]
