@@ -7,5 +7,5 @@ description = "AutoHotkey v2 syntax highlighting for Zed"
 repository = "https://github.com/BlessEphraem/zed-ahk2"
 
 [grammars.ahk2]
-repository = "file:///Z:/Codes/Plugins/Zed/ahk2"
-rev = "87d346354f1f34987b9d3f475ca65b6f4188cadc"
+repository = "https://github.com/BlessEphraem/zed-ahk2"
+rev = "f182c886e469adafa0dda3442f9e3ebc5f0e07b1"
