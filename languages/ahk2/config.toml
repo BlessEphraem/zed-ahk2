@@ -1,6 +1,6 @@
 name = "AHK2"
 grammar = "ahk2"
-path_suffixes = ["ah2", "ahk2"]
+path_suffixes = ["ahk", "ah2", "ahk2"]
 line_comments = ["; "]
 block_comment = ["/*", "*/"]
 auto_indent_using_last_non_empty_line = true
